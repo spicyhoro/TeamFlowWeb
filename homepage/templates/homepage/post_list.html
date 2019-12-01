@@ -8,8 +8,12 @@
 <ul>
 {% for post in post_list %}
     <li>
-
         {{ post.nickname }}
+        {{ post.tags }}
+        {{ post.content }}
+        {{ post.created_at }}
+        {{ post.updated_at }}
+
     </li>
 {% endfor %}
 </ul>
